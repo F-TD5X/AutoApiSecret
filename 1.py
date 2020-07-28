@@ -8,7 +8,8 @@ import json,sys,time
 #注册后一定要再点代表xxx授予管理员同意,否则outlook api无法调用
 
 
-
+id = open("configid.txt").read()
+secret = open("configkey.txt").read()
 
 
 
@@ -80,5 +81,5 @@ def main():
     except:
         print("pass")
         pass
-for _ in range(3):
+for _ in range(1):
     main()
